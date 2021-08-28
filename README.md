@@ -1,4 +1,4 @@
-# React TTS Node Express Backend
+# React TTS, powered by Next
 
 ## Installation
 
