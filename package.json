@@ -1,38 +1,42 @@
 {
-  "name": "react-tts",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
-  },
+  "name": "react-tts-express",
+  "version": "1.0.0",
+  "description": "A Node Express server for React TTS front-end",
+  "main": "app.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diskordlit/react-tts.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "React",
+    "TTS",
+    "Fun",
+    "Joke",
+    "Node",
+    "Express"
+  ],
+  "author": "Diskordlit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diskordlit/react-tts/issues"
+  },
+  "homepage": "https://github.com/Diskordlit/react-tts#readme",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-query-parser": "^1.2.0",
+    "luxon": "^2.0.2",
+    "mongoose": "^5.13.8",
+    "mongoose-unique-validator": "^2.0.3",
+    "nanoid": "^3.1.25",
+    "query-string": "^7.0.1",
+    "validator": "^13.6.0"
   }
 }
