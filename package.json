@@ -1,42 +1,13 @@
 {
-  "name": "react-tts-express",
-  "version": "1.0.0",
-  "description": "A Node Express server for React TTS front-end",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Diskordlit/react-tts.git"
-  },
-  "keywords": [
-    "React",
-    "TTS",
-    "Fun",
-    "Joke",
-    "Node",
-    "Express"
-  ],
-  "author": "Diskordlit",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Diskordlit/react-tts/issues"
-  },
-  "homepage": "https://github.com/Diskordlit/react-tts#readme",
-  "devDependencies": {
-    "env-cmd": "^10.1.0",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.12"
-  },
   "dependencies": {
-    "express": "^4.17.1",
-    "express-query-parser": "^1.2.0",
-    "luxon": "^2.0.2",
-    "mongoose": "^5.13.8",
-    "mongoose-unique-validator": "^2.0.3",
-    "nanoid": "^3.1.25",
-    "query-string": "^7.0.1",
-    "validator": "^13.6.0"
+    "next": "^11.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   }
 }
