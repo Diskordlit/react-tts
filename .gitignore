@@ -117,4 +117,7 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# Custom exclusion
+.next
 dev.env
+workspace.code-workspace
