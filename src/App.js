@@ -2,43 +2,36 @@ import "./App.css";
 import {useState} from "react"
 
 function App() {
-  const [textListItem, setTextListItem] = useState([
-    "Item 1",
-    "Item Dua",
-    "Item San",
-  ]);
+  const [textListItem, setTextListItem] = useState(["Item 1","Item 2","Item 3"]);
+  const [inputValue, setInputValue] = useState("")
+
+  const addItem = (newItem) => {
+    setTextListItem([...textListItem, newItem])
+  }
+
+  const removeItem = (itemToRemove) => {
+    setTextListItem(textListItem.filter((item) => item !== itemToRemove));
+  };
 
   return (
     <div className="App">
       <>
           <h1>React TTS</h1>
 
-        <div
-          style={{
-            position: "absolute",
-            left: "50%",
-            top: "30%",
-            transform: "translate(-50%, -50%)",
-          }}
-        >
+        <div className="Text-List">
           <h2>Text List</h2>
+          <div className="List-items">
           <ol>
             {textListItem.map((text, index) => {
-              return <li key={index} style={{ textAlign: 'left'}}>{text}</li>;
+              return <li  onClick={() => removeItem(text)} key={index} style={{ textAlign: 'left'}}>{text}</li>;
             })}
           </ol>
+          </div>
         </div>
 
-        <div
-          style={{
-            position: "absolute",
-            left: "50%",
-            top: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        >
-          <input></input>
-          <button>Send</button>
+        <div className="Input-box">
+          <input onChange={(event) => setInputValue(event.target.value)} style={{width: "500"}}></input>
+          <button onClick={() => addItem(inputValue)}>Send</button>
         </div>
       </>
     </div>
